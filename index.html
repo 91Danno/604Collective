@@ -50,14 +50,12 @@
       background: rgba(255, 255, 255, 0.02);
     }
 
-    .brand-name {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.5rem, 6vw, 3.75rem);
-      font-weight: 500;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.5rem;
-      line-height: 1.1;
+    .brand-logo {
+      display: block;
+      width: 280px;
+      max-width: 80%;
+      height: auto;
+      margin: 0 auto 1.5rem auto;
     }
 
     .headline {
@@ -110,9 +108,19 @@
 
     footer {
       margin-top: 5rem;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: #4b5563;
       letter-spacing: 0.05em;
+    }
+
+    footer a {
+      color: #9ca3af;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
     }
   </style>
 </head>
@@ -121,20 +129,23 @@
   <main class="container">
     <div class="badge">Barbering &amp; Community</div>
     
-    <h1 class="brand-name">604 Collective</h1>
+    <!-- Upload your logo image as logo.png to your GitHub repo -->
+    <img src="logo.png" alt="604 Collective Logo" class="brand-logo">
     
     <p class="headline">
       604 Collective is a barbering brand built on community. We believe the chair is a place to talk, connect, and encourage each other—proving that creating intentional spaces gives people something positive to show up for.
     </p>
 
-    <!-- Buttons setup for future links -->
     <div class="buttons">
-      <a href="#" class="btn btn-primary">Book Appointments(Soon)</a>
-      <a href="#" class="btn btn-secondary">Instagram(Soon)</a>
+      <a href="#" class="btn btn-primary">Book Appointment(Soon)</a>
+      <a href="mailto:604CollectiveBarbers@gmail.com" class="btn btn-secondary">Email Us</a>
     </div>
   </main>
 
   <footer>
+    <p style="margin-bottom: 0.5rem;">
+      <a href="mailto:604CollectiveBarbers@gmail.com">604CollectiveBarbers@gmail.com</a>
+    </p>
     &copy; 604 Collective. All rights reserved.
   </footer>
 
