@@ -52,18 +52,33 @@
 
     .brand-logo {
       display: block;
-      width: 1080px;       /* Increased from 420px */
-      max-width: 95%;     /* Allows it to grow larger across screens */
+      width: 1080px;
+      max-width: 95%;
       height: auto;
-      margin: 0 auto -2.5rem auto;    /* Decreased from 1.5rem */
+      margin: 0 auto -2.5rem auto;
     }
 
     .headline {
       font-size: clamp(1.05rem, 2.2vw, 1.2rem);
       color: #d1d5db;
       font-weight: 300;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       line-height: 1.8;
+    }
+
+    .collab-box {
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid #27272a;
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+      color: #9ca3af;
+    }
+
+    .collab-box strong {
+      color: #f3f4f6;
+      font-weight: 500;
     }
 
     .buttons {
@@ -107,7 +122,7 @@
     }
 
     footer {
-      margin-top: 5rem;
+      margin-top: 4rem;
       font-size: 0.85rem;
       color: #4b5563;
       letter-spacing: 0.05em;
@@ -129,16 +144,20 @@
   <main class="container">
     <div class="badge">Barbering &amp; Community</div>
     
-    <!-- Upload your logo image as logo.png to your GitHub repo -->
+    <!-- Make sure logo.png is uploaded to your GitHub repository -->
     <img src="logo.png" alt="604 Collective Logo" class="brand-logo">
     
     <p class="headline">
       604 Collective is a barbering brand built on community. We believe the chair is a place to talk, connect, and encourage each other—proving that creating intentional spaces gives people something positive to show up for.
     </p>
 
+    <div class="collab-box">
+      <strong>Building something together?</strong> We’re always looking to connect for community pop-ups, workshops, and local events. Drop us a line and let's make it happen.
+    </div>
+
     <div class="buttons">
-      <a href="#" class="btn btn-primary">Book Appointment(Soon)</a>
-      <a href="mailto:604CollectiveBarbers@gmail.com" class="btn btn-secondary">Email Us</a>
+      <a href="#" class="btn btn-primary">Book Appointment (Soon)</a>
+      <a href="mailto:604CollectiveBarbers@gmail.com" class="btn btn-secondary">Let's Collaborate</a>
     </div>
   </main>
 
